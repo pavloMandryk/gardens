@@ -26,6 +26,8 @@
       - name: ERC20
         file: ./abis/ERC20.json
     eventHandlers:
+      - event: GardenTransactionTwo(address,address,address)
+        handler: handleGardenTransactionTwo
       - event: DeployDao(address)
         handler: handleDeployDao
       - event: SetupDao(address)
